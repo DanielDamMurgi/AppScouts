@@ -9,7 +9,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.crashlytics.android.Crashlytics;
 import com.scouts.appscouts.R;
+
+import io.fabric.sdk.android.Fabric;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -21,8 +24,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Fabric.with(this, new Crashlytics());
+
         findView();
         events();
+
+        comprobarInicio();
 
     }
 
@@ -42,7 +49,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_registro) {
-
+            Intent i = new Intent(this, RegistroActivity.class);
+            startActivity(i);
             return true;
         }
 
@@ -66,8 +74,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             // TODO implementar inicio BBDD
             Intent i = new Intent(this, PanelActivity.class);
             startActivity(i);
+            finish();
         }
 
+    }
+
+    private void comprobarInicio(){
+        // TODO: Comprobar si el usuario tiene la sesion iniciada al entrar
     }
 
     @Override
