@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorBackground"
-    android:paddingLeft="50dp"
-    android:paddingRight="50dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
     tools:context=".ui.MainActivity">
 
 
@@ -37,32 +37,36 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:ems="10"
-        android:textSize="20dp"
-        android:padding="3dp"
         android:background="#ce93d8"
-        android:textColor="@color/colorPrimaryDark"
         android:drawableLeft="@drawable/ic_email_white_24dp"
+        android:ems="10"
         android:hint="@string/email"
         android:inputType="textEmailAddress"
+        android:padding="3dp"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toTopOf="@+id/editTextLoginPassword"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewLoginIcon" />
+        app:layout_constraintTop_toBottomOf="@+id/imageViewLoginIcon"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_chainStyle="packed" />
 
     <EditText
         android:id="@+id/editTextLoginPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:ems="10"
-        android:textSize="20dp"
-        android:padding="3dp"
         android:background="#ce93d8"
-        android:textColor="@color/colorPrimaryDark"
         android:drawableLeft="@drawable/ic_lock_white_24dp"
+        android:ems="10"
         android:hint="@string/password"
         android:inputType="textPassword"
+        android:padding="3dp"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLogin"
         app:layout_constraintEnd_toEndOf="@+id/editTextloginEmail"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/editTextloginEmail"
         app:layout_constraintTop_toBottomOf="@+id/editTextloginEmail" />
 
@@ -75,7 +79,9 @@
         android:text="@string/login"
         android:textColor="@android:color/white"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/editTextLoginPassword"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/editTextLoginPassword"
         app:layout_constraintTop_toBottomOf="@+id/editTextLoginPassword" />
 </android.support.constraint.ConstraintLayout>

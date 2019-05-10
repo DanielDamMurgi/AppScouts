@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "265027297593",
+    "firebase_url": "https://appscouts-339a7.firebaseio.com",
+    "project_id": "appscouts-339a7",
+    "storage_bucket": "appscouts-339a7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265027297593:android:3edb608965f4a615",
+        "android_client_info": {
+          "package_name": "com.scouts.appscouts"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "265027297593-f3i51rtkqejrrketscsjbvhqc7tk5hc2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEFS0hpxxiEwxQ6SmFgp78Sw_kncEay_4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "265027297593-f3i51rtkqejrrketscsjbvhqc7tk5hc2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
