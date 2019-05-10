@@ -57,14 +57,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (email.isEmpty()){
             etEmail.setError("Se requiere el email");
             datosOk = false;
-        }
-        if (password.isEmpty()){
-            etPassword.setError("Se requiere contraseña");
+        }else if (password.isEmpty()){
+            etPassword.setError("Se requiere la contraseña");
             datosOk = false;
         }
 
-
         if (datosOk){
+            // TODO implementar inicio BBDD
             Intent i = new Intent(this, PanelActivity.class);
             startActivity(i);
         }
