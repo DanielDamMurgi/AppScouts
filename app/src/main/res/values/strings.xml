@@ -18,4 +18,6 @@
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
     <string name="registro">Registro</string>
+    <string name="perfil">Perfil</string>
+    <string name="cerrar_sesion">Cerrar Sesión</string>
 </resources>
