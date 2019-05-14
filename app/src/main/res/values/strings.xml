@@ -20,4 +20,7 @@
     <string name="registro">Registro</string>
     <string name="perfil">Perfil</string>
     <string name="cerrar_sesion">Cerrar Sesión</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="repeat_password">Repetir contraseña</string>
 </resources>
