@@ -13,11 +13,17 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
+import android.widget.TextView;
 
+import com.scouts.appscouts.LiveData.LiveData;
 import com.scouts.appscouts.R;
 
 public class PanelActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    private TextView tvNombre, tvEmail;
+    private View headerView;
+    private NavigationView navigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,12 +33,15 @@ public class PanelActivity extends AppCompatActivity
         setSupportActionBar(toolbar);
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
-        NavigationView navigationView = findViewById(R.id.nav_view);
+        navigationView = findViewById(R.id.nav_view);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
+
+        findView();
+        rellenarUsuario();
     }
 
     @Override
@@ -90,5 +99,17 @@ public class PanelActivity extends AppCompatActivity
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    private void rellenarUsuario(){
+        tvNombre.setText(LiveData.getUsuario().getNombre() + " " + LiveData.getUsuario().getApellidos());
+        tvEmail.setText(LiveData.getUsuario().getEmail());
+    }
+
+    private void findView(){
+        headerView = navigationView.getHeaderView(0);
+
+        tvNombre = headerView.findViewById(R.id.textViewNombre);
+        tvEmail = headerView.findViewById(R.id.textViewEmail);
     }
 }

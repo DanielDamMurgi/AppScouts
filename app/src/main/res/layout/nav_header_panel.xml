@@ -37,7 +37,7 @@
                 android:id="@+id/textViewNombre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Daniel Rueda Lao"
+                android:text=""
                 android:layout_marginBottom="5dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
@@ -46,7 +46,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:text="daniel.ruedalao@gmail.com" />
+                android:text="" />
         </LinearLayout>
 
     </LinearLayout>
@@ -59,21 +59,23 @@
 
         <Button
             android:id="@+id/buttonPerfil"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:padding="5dp"
             android:layout_marginRight="5dp"
             android:background="@drawable/diseno_botones"
-            tools:text="@string/perfil" />
+            android:text="@string/perfil" />
 
         <Button
             android:id="@+id/buttonCerrarSesion"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:padding="5dp"
             android:layout_marginLeft="5dp"
             android:background="@drawable/diseno_botones"
-            tools:text="@string/cerrar_sesion" />
+            android:text="@string/cerrar_sesion" />
 
     </LinearLayout>
 
