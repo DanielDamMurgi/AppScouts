@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardViewMensajes"
+    android:layout_width="match_parent"
+    android:layout_margin="7dp"
+    app:cardElevation="5dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="6dp">
+        <TextView
+            android:id="@+id/textViewMensajesNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Daniel Rueda Lao"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/textViewMensajesMensaje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:textColor="@android:color/black"
+            android:text="Mañana sera la fiesdtae dfin de ronda recordad llevar gorra, protacción. Mañana sera la fiesdtae dfin de ronda recordad llevar gorra, protacciónMañana sera la fiesdtae dfin de ronda recordad llevar gorra, protacción "/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="7dp">
+            <TextView
+                android:id="@+id/textViewMensajesFecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:text="16/05/2019"/>
+
+            <TextView
+                android:id="@+id/textViewMensajesHora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="18:24"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

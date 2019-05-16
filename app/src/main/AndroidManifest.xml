@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.scouts.appscouts">
 
+    <meta-data
+        android:name="firebase_crashlytics_collection_enabled"
+        android:value="false" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.RegistroActivity"></activity>
+        <activity android:name=".ui.GeneralActivity"></activity>
+        <activity android:name=".ui.RegistroActivity" />
         <activity
             android:name=".ui.PanelActivity"
             android:label="@string/title_activity_panel"
@@ -22,9 +27,5 @@
             </intent-filter>
         </activity>
     </application>
-
-    <meta-data
-        android:name="firebase_crashlytics_collection_enabled"
-        android:value="false" />
 
 </manifest>
